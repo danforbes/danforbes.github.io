@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>testRigor Example</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="register.css">
+    <script type="module" src="register.js"></script>
+  </head>
+
+  <body>
+    <form id="form">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="6"
+        required
+      />
+      <label for="confirm-password">Confirm Password:</label>
+      <input
+        type="password"
+        name="confirm-password"
+        id="confirm-password"
+        minlength="6"
+        required
+      />
+      <button type="submit" id="submit" disabled>Submit</button>
+    </form>
+  </body>
+</html>
